@@ -29,7 +29,6 @@
             width="150px"
             class="rounded"
           />
-          id=""
         </a>
         <ul class="navbar-nav">
           <li><a class="nav-link" id="home">HOMEPAGE</a></li>
@@ -40,7 +39,12 @@
         </ul>
       </nav>
 
-      <script></script>
+      <script>
+        let HOMEPAGE = "homepage.html";
+        document.getElementById("home").onclick = function () {
+          window.location.replace(HOMEPAGE);
+        };
+      </script>
     </div>
 
     <!-- HEADER -->
